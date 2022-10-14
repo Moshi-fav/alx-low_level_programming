@@ -8,12 +8,15 @@ int main(void)
 {
 	int digit;
 
-	for (digit = 0; digit <= 8; digit++)
+	for (digit = 0; digit <= 9; digit++)
 	{
 		putchar(digit + '0');
-		putchar(',');
-		putchar(' ');
+		if (digit < 9){
+			putchar(',');
+			putchar(' ');
+		}
+		else
+			putchar('\n')
 	}
-	putchar(digit + '0');
 	return (0);
 }
