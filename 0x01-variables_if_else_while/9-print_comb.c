@@ -14,6 +14,6 @@ int main(void)
 		putchar(',');
 		putchar(' ');
 	}
-	putchar(9 + '0');
+	putchar(digit + '0');
 	return (0);
 }
