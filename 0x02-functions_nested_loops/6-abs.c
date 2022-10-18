@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _abs _> return absolute value of agument
+ * _abs -> return absolute value of agument
  * @c: integer parameter
  * Return: absolute value of argument
  */
