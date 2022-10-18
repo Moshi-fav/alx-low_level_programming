@@ -5,6 +5,7 @@
 void times_table(void)
 {
 	int i, j;
+
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
@@ -15,7 +16,7 @@ void times_table(void)
 				if (j * i < 10)
 					_putchar(' ');
 			}
-			if ( i * j < 10)
+			if (i * j < 10)
 			{
 				_putchar((i * j) + '0');
 			}
