@@ -40,9 +40,9 @@ void print_times_table(int n)
 				{
 					_putchar(k + '0');
 				}
-				_putchar(',');
-			}
-			_putchar('\n');
+				if (i * j != n * n)
+					_putchar(',');
+			} _putchar('\n');
 		}
 	}
 }
