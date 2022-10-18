@@ -28,7 +28,7 @@ void print_to_98(int n)
 				{
 					_putchar(' ');
 					_putchar(i + '0');
-					_putchar(j + '0')
+					_putchar(j + '0');
 				}
 				if (i != 9 || j != 8)
 					_putchar(',');
