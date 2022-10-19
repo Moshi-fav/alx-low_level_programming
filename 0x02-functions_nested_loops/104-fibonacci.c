@@ -16,10 +16,10 @@ int main(void)
 		j = k;
 	}
 
-	divi = i / 1000000000;
-	remi = i % 1000000000;
-	divj = j / 1000000000;
-	remj = j % 1000000000;
+	divi = j / 1000000000;
+	remi = j % 1000000000;
+	divj = k / 1000000000;
+	remj = k % 1000000000;
 	for (count = 92; i < 99; i++)
 	{
 		printf(", %lu", divj + (remj / 1000000000));
