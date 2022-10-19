@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	long int i = 1, j = 2, k, sum = 2;
+	unsigned long int i = 1, j = 2, k, sum = 2;
 
 	while (k < 4000000)
 	{
@@ -15,6 +15,6 @@ int main(void)
 		i = j;
 		j = k;
 	}
-	printf("%ld\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
