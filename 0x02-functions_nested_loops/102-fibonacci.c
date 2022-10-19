@@ -1,4 +1,4 @@
-#include < stdio.h>
+#include <stdio.h>
 /**
  * main - prints forst 50 fibonacci numbers
  * Return: 0 if successful
