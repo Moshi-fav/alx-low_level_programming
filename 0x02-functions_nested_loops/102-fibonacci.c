@@ -5,17 +5,17 @@
  */
 int main(void)
 {
-	int i = 1, j = 2, k, count = 2;
+	long int i = 1, j = 2, k, count = 2;
 
-	printf("%d, %d, ", i, j);
+	printf("%ld, %ld, ", i, j);
 	for (; count <= 49; count++)
 	{
 		k = i + j;
-		printf("%d, ", k);
+		printf("%ld, ", k);
 		i = j;
 		j = k;
 	}
 	k = i + j;
-	printf("%d\n", k);
+	printf("%ld\n", k);
 	return (0);
 }
