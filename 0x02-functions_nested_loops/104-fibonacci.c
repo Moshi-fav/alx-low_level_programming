@@ -25,7 +25,7 @@ int main(void)
 		printf(", %lu", divj + (remj / 1000000000));
 		printf("%lu", remj % 1000000000);
 		divj = divj + divi;
-		divi = divj - div i;
+		divi = divj - divi;
 		remj = remj + remi;
 		remi = remj - remi;
 	}
