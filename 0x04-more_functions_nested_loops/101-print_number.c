@@ -1,29 +1,21 @@
 #include "main.h"
-#include <math.h>
 /**
  * print_number -> prints a number
  * @n: number to print
  */
 void print_number(int n)
 {
-	unsigned int i, j = 1, count;
+	unsigned int n1;
 
 	if (n < 0)
 	{
-		n = -n;
+		n1 = -n;
 		_putchar('-');
 	}
-	while (n)
+	if (n1 / 10)
 	{
-		count = 0;
-		while (j > 10)
-		{
-			j = n / 10;
-			count = count + 1;
-		}
-		_putchar(j + '0');
-		n = n - (j * pow(10, count));
+		print_number(n1 / 10);
 	}
-	_putchar('\n');
 
+	_putchar((n1 % 10) + '0');
 }
