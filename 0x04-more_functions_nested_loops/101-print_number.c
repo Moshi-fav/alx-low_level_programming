@@ -1,12 +1,12 @@
 #include "main.h"
-#include <math.h>
 /**
  * print_number -> prints a number
  * @n: number to print
  */
 void print_number(int n)
 {
-	unsigned int num, j, count;
+	unsigned int num, j, mult;
+	int count, i;
 
 	if (n < 0)
 	{
@@ -15,17 +15,30 @@ void print_number(int n)
 	}
 	else
 		num = n;
+
 	while (num)
 	{
-		count = 0;
-		j = num / 10;
-		while (j > 10)
+		if (num < 9)
 		{
-			j = num / 10;
-			count = count + 1;
+			_putchar(num + '0');
+			break;
 		}
-		_putchar(j + '0');
-		num = num - (j * pow(10, count));
+		else
+		{
+			j = 11;
+			count = 0;
+			while (j >= 10)
+			{
+				j = num / 10;
+				count = count + 1;
+			}
+			_putchar(j + '0');
+			mult = 1;
+			for (i = 0; i < count; i++)
+				mult = mult * 10;
+
+			num = num - (j * mult);
+		}
 	}
 	_putchar('\n');
 
