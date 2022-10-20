@@ -1,5 +1,5 @@
 #include <stdio.h>
-/** 
+/**
  * main -> fizzbuzz test
  * Return: 0 if successful
  */
