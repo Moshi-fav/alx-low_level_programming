@@ -4,14 +4,16 @@
  */
 void more_numbers(void)
 {
-	int i, j;
+	int i, k;
 
-	for(i = 0; i <= 14; i++)
+	for (k = 0; k < 10; k++)
 	{
-		j = i / 10;
-		if (j > 0)
-			_putchar(j + '0');
-		_putchar((i % 10) + '0');
+		for (i = 0; i <= 14; i++)
+		{
+			if (i > 10)
+				_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
