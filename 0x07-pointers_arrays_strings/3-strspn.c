@@ -6,13 +6,13 @@
  * @accept: other string?
  * Return: number of bytes
  */
-unsigned int _strspn(cahr *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j;
 
-	for (i = 0;; i++)
+	for (i = 0; s[i]; i++)
 	{
-		for (j = 0;; j++)
+		for (j = 0; accept[j]; j++)
 		{
 			if (s[i] == accept[j])
 				break;
