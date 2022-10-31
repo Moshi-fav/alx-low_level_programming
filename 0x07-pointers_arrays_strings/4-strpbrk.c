@@ -3,7 +3,7 @@
 /**
  * _strpbrk - searches a string for any char from another string
  * @s: pointer to string to search
- * @accpet: pointer to bytes to search for
+ * @accept: pointer to bytes to search for
  * Return: pointer to byte in s or NULL
  */
 char *_strpbrk(char *s, char *accept)
@@ -15,10 +15,13 @@ char *_strpbrk(char *s, char *accept)
 		for (j = 0; accept[j]; j++)
 		{
 			if (s[i] == accept[j])
-				break;
+			{
+				if (s[i])
+					return (s + i);
+				else
+					break;
+			}
 		}
-		if (accept[j])
-			return (s + i);
 	}
 	return (0);
 }
