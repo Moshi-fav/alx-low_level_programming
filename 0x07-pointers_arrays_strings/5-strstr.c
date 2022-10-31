@@ -7,11 +7,7 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i, j, length = 0;
-
-	/*find length of substring needle*/
-	for (i = 0; needle[i]; i++)
-		length = length + 1;
+	unsigned int i, j;
 
 	for (i = 0; haystack[i]; i++)
 	{
