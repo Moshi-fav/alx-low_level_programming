@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr - returns pointer to memory address of first occurrence of
  * character in string
@@ -13,5 +14,7 @@ char *_strchr(char *s, char c)
 		if (*s == c)
 			return (s);
 	}
+	if (*s == c)
+		return (s);
 	return (NULL);
 }
