@@ -9,7 +9,7 @@ int _sqrt(int num, int check)
 {
 	if ((check * check) == num)
 		return (check);
-	if (check <= 0)
+	if (check < 0)
 		return (-1);
 	return (_sqrt(num, check - 1));
 }
