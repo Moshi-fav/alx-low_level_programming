@@ -9,9 +9,9 @@ int _sqrt(int num, int check)
 {
 	if ((check * check) == num)
 		return (check);
-	if (check < 0)
+	if (check == num)
 		return (-1);
-	return (_sqrt(num, check - 1));
+	return (_sqrt(num, check + 1));
 }
 /**
  * _sqrt_recursion - finds natural square root of given number
@@ -26,5 +26,5 @@ int _sqrt_recursion(int n)
 		return (0);
 	if (n < 0)
 		return (-1);
-	return (_sqrt(n, n));
+	return (_sqrt(n, 2));
 }
