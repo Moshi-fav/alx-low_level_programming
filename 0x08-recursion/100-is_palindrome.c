@@ -9,12 +9,8 @@ int is_palindrome(char *s)
 	char *e;
 	int len = 0;
 
-	while (*s != '\0')
-	{
-		e = s;
-		len++;
-		s++;
-	}
+	len = _strlen_recursion(s);
+	e = s + len;
 	if (len == 1 || len == 0)
 		return (1);
 	return (check_palindrome(s, e, len));
