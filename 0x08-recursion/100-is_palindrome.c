@@ -41,7 +41,9 @@ int check_palindrome(char *start, char *end, int length)
 		return (1);
 	if (*start != *end)
 		return (0);
-	if (length > 1)
+	if (*start == *end && length == 2)
+		return (1);
+	if (*start == *end && length > 2)
 		return (check_palindrome(start + 1, end - 1, length - 2));
 	return (1);
 }
