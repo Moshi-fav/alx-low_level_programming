@@ -2,6 +2,7 @@
 #define _DOG_H_
 
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * struct dog - new struct for storing dog variables
  * @name: string pointer for name
