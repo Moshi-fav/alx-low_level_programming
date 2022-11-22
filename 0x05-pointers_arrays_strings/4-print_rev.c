@@ -7,6 +7,12 @@ void print_rev(char *s)
 {
 	char *a = s;
 
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+
 	while (*(s + 1) != '\0')
 	{
 		s++;
