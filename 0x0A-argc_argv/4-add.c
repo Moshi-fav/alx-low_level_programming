@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 			total = total + c;
+			printf("invalid: % d\n", invalid);
 		}
 		printf("%d\n", total);
 	}
