@@ -62,7 +62,7 @@ int _atoi2(char *str, int *invalid)
 	for (i = 1; i < len; i++)
 	{
 		printf("str[i]: %d", str[i]);
-		if (str[i] < 48 || str[i] > 57)
+		if (!isdigit(str[i]))
 		{
 			(*invalid)++;
 			return (0);
