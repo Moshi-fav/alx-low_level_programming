@@ -62,10 +62,13 @@ int _atoi2(char *str, int *invalid)
 	{
 		if (str[i] < '0' || str[i] > '9')
 		{
-			*invalid = 1;
+			(*invalid)++;
 			return (0);
 		}
-		num = num * 10 + (str[i] - '0');
+		else
+		{
+			num = num * 10 + (str[i] - '0');
+		}
 	}
 	if (neg == 1)
 		num = -num;
