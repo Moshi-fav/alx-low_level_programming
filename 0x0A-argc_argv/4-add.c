@@ -61,6 +61,7 @@ int _atoi2(char *str, int *invalid)
 	}
 	for (i = 1; i < len; i++)
 	{
+		printf("str[i]: %s", str[i]);
 		if (str[i] < '0' || str[i] > '9')
 		{
 			(*invalid)++;
