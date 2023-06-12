@@ -48,9 +48,8 @@ int _atoi(char *str)
 	else
 	{
 		num = str[0] - '0';
-		i = 1;
 	}
-	for (; i < len; i++)
+	for (i = 1; i < len; i++)
 	{
 		num = num * 10 + str[i] - '0';
 	}
