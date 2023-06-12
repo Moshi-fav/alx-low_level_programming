@@ -60,7 +60,7 @@ int _atoi2(char *str, int *invalid)
 	}
 	for (i = 1; i < len; i++)
 	{
-		if (str[i] <= '0' || str[i] >= '9')
+		if (str[i] < '0' || str[i] > '9')
 		{
 			*invalid = 1;
 			return (0);
