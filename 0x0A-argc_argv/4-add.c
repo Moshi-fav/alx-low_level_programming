@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 			total = total + c;
-			printf("invalid: % d\n", invalid);
+			printf("invalid: %d\n", invalid);
 		}
 		printf("%d\n", total);
 	}
@@ -61,8 +61,8 @@ int _atoi2(char *str, int *invalid)
 	}
 	for (i = 1; i < len; i++)
 	{
-		printf("str[i]: %s", str[i]);
-		if (str[i] < '0' || str[i] > '9')
+		printf("str[i]: %d", str[i]);
+		if (str[i] < 48 || str[i] > 57)
 		{
 			(*invalid)++;
 			return (0);
