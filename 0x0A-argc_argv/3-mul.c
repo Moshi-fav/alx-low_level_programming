@@ -3,7 +3,6 @@
 
 /**
 * main - multiplies 2 numbers and prints the result
-* atoi - converts char array to number
 *
 * @argc: number of arguments
 * @argv: array of pointers to arguments
@@ -13,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int num1, num2, prod;
+	int num1, num2;
 
 	if (argc != 3)
 	{
@@ -21,14 +20,22 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		num1 = atoi(argv[1]);
-		num2 = atoi(argv[2]);
-		printf("%d\n", num1 * num2;
+		num1 = _atoi(argv[1]);
+		num2 = _atoi(argv[2]);
+		printf("%d\n", num1 * num2);
 	}
 	return (0);
 }
 
-int atoi(char *str)
+/**
+* _atoi - converts char array to number
+* 
+* @str: pointer to char array
+* 
+* Return: converted int value
+*/
+
+int _atoi(char *str)
 {
 	int len = 0, num = 0, i = 0, neg = 0;
 
@@ -43,7 +50,7 @@ int atoi(char *str)
 		num = str[0] - '0';
 		i = 1;
 	}
-	for (i; i < len; i++)
+	for (; i < len; i++)
 	{
 		num = num * 10 + str[i] - '0';
 	}
