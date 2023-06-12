@@ -10,7 +10,7 @@
 * Return: Always 0 (success)
 */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int total = 0, invalid = 0, i, c;
 
@@ -23,7 +23,8 @@ int main(int argc, char* argv[])
 		for (i = 1; i < argc; i++)
 		{
 			c = _atoi2(argv[i], &invalid);
-			if (invalid == 1) {
+			if (invalid == 1)
+			{
 				printf("Error\n");
 				return (1);
 			}
@@ -38,11 +39,12 @@ int main(int argc, char* argv[])
 * _atoi2 - converts char array to number
 *
 * @str: pointer to char array
+* @invalid: indicates whether value contains any non-digit chars
 *
 * Return: converted int value
 */
 
-int _atoi(char* str, int *invalid)
+int _atoi2(char *str, int *invalid)
 {
 	int len = 0, num = 0, i = 0, neg = 0;
 
@@ -60,7 +62,7 @@ int _atoi(char* str, int *invalid)
 	{
 		if (str[i] <= '0' || str[i] >= '9')
 		{
-			invalid = 1;
+			*invalid = 1;
 			return (0);
 		}
 		num = num * 10 + str[i] - '0';
@@ -69,4 +71,3 @@ int _atoi(char* str, int *invalid)
 		num = -num;
 	return (num);
 }
-
