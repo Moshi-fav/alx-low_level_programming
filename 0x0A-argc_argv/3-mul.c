@@ -29,9 +29,9 @@ int main(int argc, char *argv[])
 
 /**
 * _atoi - converts char array to number
-* 
+*
 * @str: pointer to char array
-* 
+*
 * Return: converted int value
 */
 
