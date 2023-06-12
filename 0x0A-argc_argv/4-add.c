@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int total = 0, invalid = 0, i, c;
+	int total = 0, invalid = 0, *inv = &invalid, i, c;
 
 	if (argc == 1)
 	{
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			c = _atoi2(argv[i], &invalid);
+			c = _atoi2(argv[i], inv);
 			if (invalid != 0)
 			{
 				printf("Error\n");
@@ -65,7 +65,7 @@ int _atoi2(char *str, int *invalid)
 			*invalid = 1;
 			return (0);
 		}
-		num = num * 10 + str[i] - '0';
+		num = num * 10 + (str[i] - '0');
 	}
 	if (neg == 1)
 		num = -num;
