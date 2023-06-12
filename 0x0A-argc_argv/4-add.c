@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			c = _atoi2(argv[i], &invalid);
-			if (invalid == 1)
+			if (invalid != 0)
 			{
 				printf("Error\n");
 				return (1);
