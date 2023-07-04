@@ -10,11 +10,11 @@
 *
 * Return: Always 0 (success)
 */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int coins = 0, rem, i, j = 0;
 	int denom[] = { 25, 10, 5, 2, 1 };
-	char* arg;
+	char *arg;
 
 	if (argc != 2)
 	{

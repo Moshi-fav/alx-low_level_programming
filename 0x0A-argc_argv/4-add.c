@@ -10,13 +10,13 @@
 *
 * Return: Always 0 (success)
 */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int total = 0, i, num;
 
 	for (i = 1; i < argc; i++)
 	{
-		char* arg = argv[i];
+		char *arg = argv[i];
 		int j = 0;
 
 		while (arg[j] != '\0')
