@@ -11,8 +11,7 @@
 */
 int main(int argc, char* argv[])
 {
-	int sum = 0;
-	int i, num;
+	int total = 0, i, num;
 
 	for (i = 1; i < argc; i++)
 	{
@@ -28,14 +27,14 @@ int main(int argc, char* argv[])
 			}
 			j++;
 		}
-		num = atoi(arg);
+		num = _atoi(arg);
 		if (num < 0)
 		{
 			printf("Error\n");
 			return (1);
 		}
-		sum += num;
+		total += num;
 	}
-	printf("%d\n", sum);
+	printf("%d\n", total);
 	return (0);
 }
