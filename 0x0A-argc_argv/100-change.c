@@ -11,7 +11,7 @@
 */
 int main(int argc, char* argv[])
 {
-	int coins = 0, rem;
+	int coins = 0, rem, i, j = 0;
 	int denom[] = { 25, 10, 5, 2, 1 };
 
 	if (argc != 2)
@@ -19,8 +19,9 @@ int main(int argc, char* argv[])
 		printf("Error\n");
 		return (1);
 	}
+
 	char* arg = argv[1];
-	int j = 0;
+
 	while (arg[j] != '\0')
 	{
 		if (arg[j] < '0' || arg[j] > '9')
@@ -41,8 +42,9 @@ int main(int argc, char* argv[])
 		if (rem > denom[i])
 		{
 			coins += rem / denom[i];
-			rem = rem % denom[i]
+			rem = rem % denom[i];
 		}
 	}
 	printf("%d\n", coins);
+	return (0);
 }
