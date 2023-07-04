@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
 	while (arg[j] != '\0')
 	{
-		if (arg[j] < '0' || arg[j] > '9')
+		if (arg[j] != '-' && (arg[j] < '0' || arg[j] > '9'))
 		{
 			printf("Error\n");
 			return (1);
