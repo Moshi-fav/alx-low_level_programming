@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
 	}
 	for (i = 0; i < 5; i++)
 	{
-		if (rem > denom[i])
+		if (rem >= denom[i])
 		{
 			coins += rem / denom[i];
 			rem = rem % denom[i];
