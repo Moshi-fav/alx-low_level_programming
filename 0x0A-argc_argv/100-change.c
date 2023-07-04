@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -13,6 +14,7 @@ int main(int argc, char* argv[])
 {
 	int coins = 0, rem, i, j = 0;
 	int denom[] = { 25, 10, 5, 2, 1 };
+	char* arg;
 
 	if (argc != 2)
 	{
@@ -20,7 +22,7 @@ int main(int argc, char* argv[])
 		return (1);
 	}
 
-	char* arg = argv[1];
+	arg = argv[1];
 
 	while (arg[j] != '\0')
 	{
